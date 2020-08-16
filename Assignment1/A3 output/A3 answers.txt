@@ -1,0 +1,11 @@
+Questions-
+
+1. Identify the basic blocks that correspond to the while loop. How is the GIMPLE for a while loop different from simple if-else jumps?
+Ans- <bb 3> and <bb 4> are corresponds to while loop and from <bb 4> they are corresponding to the iteration condition which is related to <bb 2 > condition. If-else 
+jumps are conditional goto with two branches and while loop is unconditional goto. 
+ 
+2. Identify the basic blocks for the nested for-loop. You should be able to identify initializers, conditions and increments for each loop as well as the shared inner body. Is there really
+ anything special about a for-loop as compared to a while-loop?
+Ans- <bb5> outer loop variable initialisation, <bb6> outer look for condition, <bb7>- inner loop body expression, <bb8> inner loop for condition, <bb9> outer loop of 
+variable increment, <bb10> outer loop for condition. In for-loop, every condition is declared in new loop which makes the gimple code lengthy and in while-loop, in 
+minimum lines it is executed.
