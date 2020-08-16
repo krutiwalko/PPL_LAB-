@@ -1,0 +1,15 @@
+Questions-
+
+1. How many times is the expression (a + c) computed in the original code (as seen in the SSA pass)? What about after the FRE pass?
+Ans- In SSA pass, the expression (a+c) is computed two times whereas in FRE pass, one time.
+
+2. Have there been any more optimizations after FRE? How will you check?
+Ans- No, there is no further optimizations after FRE because only one optimized file is created.
+
+3. Why did we have to put a "return b" in this assignment?  What if "return b" is changed to "return 0"? Will it make any difference?
+Ans- we put ‘return b’ to obtained the result of b expression[b=(a+c+b)*(c+a)]. If we change ‘return b’ with ‘return 0’ then the variable b eliminate and we will not get the value of b.
+
+
+
+
+
