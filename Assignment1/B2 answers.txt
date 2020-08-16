@@ -1,5 +1,0 @@
-Questions-
-
-1. What will happen if "a = a + N" is replaced by "a = a + 1"?
-Ans- If we replaced it with “a=a+1” then we will be able to evaluate the value of a. And as global variable is of no use, we can also
- eliminate it from the code.
