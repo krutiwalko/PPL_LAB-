@@ -1,0 +1,34 @@
+
+;; Function main (main, funcdef_no=12, decl_uid=2976, cgraph_uid=12, symbol_order=12)
+
+Iterations: 0
+main ()
+{
+  int b;
+  int a;
+  int _7;
+
+  <bb 2> [0.00%]:
+  a_3 = 4;
+  goto <bb 4>; [0.00%]
+
+  <bb 3> [0.00%]:
+  b_8 = b_2 * 2;
+  a_9 = a_1 + 1;
+
+  <bb 4> [0.00%]:
+  # a_1 = PHI <a_3(2), a_9(3)>
+  # b_2 = PHI <b_4(D)(2), b_8(3)>
+  if (a_1 <= 99)
+    goto <bb 3>; [0.00%]
+  else
+    goto <bb 5>; [0.00%]
+
+  <bb 5> [0.00%]:
+  printf ("%d%d", a_1, b_2);
+  _7 = 0;
+  return _7;
+
+}
+
+
